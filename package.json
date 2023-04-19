@@ -6,13 +6,32 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "lint:fix": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "depcheck": "depcheck"
   },
   "dependencies": {
+    "@next/font": "^13.3.0",
+    "depcheck": "^1.4.3",
     "eslint": "8.38.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "13.3.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "firebase": "^9.19.1",
+    "lodash": "^4.17.21",
     "next": "13.3.0",
+    "next-auth": "^4.22.0",
+    "prettier": "^2.8.7",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "sass": "^1.62.0"
   }
 }

@@ -1,0 +1,34 @@
+@import url("../../fonts/font.css");
+.productWrapper {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.header {
+  font-family: Gotham;
+  height: var(--header-height);
+  background-color: var(--theme-color-2);
+  color: var(--light-font-color);
+  // position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  &__container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__HomeLink{
+    text-decoration: none;
+    
+   }
+  &__textlink {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+  }
+}
+
