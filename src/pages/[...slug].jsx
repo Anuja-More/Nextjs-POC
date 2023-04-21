@@ -65,6 +65,7 @@ export async function getServerSideProps({ params: { slug } }) {
         'https://fakestoreapi.com/products/category/electronics?limit=100'
       );
       const data = await res.json();
+      // res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate');
       return { props: { data } };
     } else if (slug[0] === 'jewelery') {
       const res = await fetch(
